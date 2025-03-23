@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply Now - AL MASAA AL BAYDHA</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="AL MASAA AL BAYDHA Logo">
+            <div class="logo-text">
+              <h1>AL MASAA AL BAYDHA</h1>
+              <p>DOCUMENTS TYPING & COPYING</p>
+            </div>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="register.html" class="active">Apply Now</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="status.html">Check Status</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="login.html" class="btn btn-secondary">Login</a>
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container page-container">
+      <div class="page-header">
+        <a href="index.html" class="back-link">
+          <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+        <h1>Service Application</h1>
+        <p>Complete the form below to apply for our services</p>
+      </div>
+
+      <div class="application-container">
+        <div class="application-steps" id="application-steps">
+          <div class="step active" data-step="1">
+            <div class="step-number">1</div>
+            <div class="step-label">Service Selection</div>
+          </div>
+          <div class="step-divider"></div>
+          <div class="step" data-step="2">
+            <div class="step-number">2</div>
+            <div class="step-label">Personal Details</div>
+          </div>
+          <div class="step-divider"></div>
+          <div class="step" data-step="3">
+            <div class="step-number">3</div>
+            <div class="step-label">Document Upload</div>
+          </div>
+        </div>
+
+        <div class="application-card">
+          <!-- Step 1: Service Selection -->
+          <div class="application-step-content" id="step-1">
+            <h2>Select Service Type</h2>
+            <p>Choose the type of service you need</p>
+
+            <div class="service-tabs">
+              <div class="tab-buttons">
+                <button class="tab-button active" data-tab="business">Business Services</button>
+                <button class="tab-button" data-tab="personal">Personal Services</button>
+              </div>
+
+              <div class="tab-content active" id="business-tab">
+                <div class="service-options">
+                  <div class="service-option">
+                    <input type="radio" name="service-type" id="trade-license" value="trade-license" checked>
+                    <label for="trade-license">
+                      <div class="option-content">
+                        <h3>Trade License Services</h3>
+                        <p>New license issuance or renewal of existing license</p>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="service-option">
+                    <input type="radio" name="service-type" id="business-setup" value="business-setup">
+                    <label for="business-setup">
+                      <div class="option-content">
+                        <h3>Business Setup</h3>
+                        <p>Complete business setup services in UAE</p>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="service-option">
+                    <input type="radio" name="service-type" id="pro-services" value="pro-services">
+                    <label for="pro-services">
+                      <div class="option-content">
+                        <h3>PRO Services</h3>
+                        <p>Government transactions and document processing</p>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="service-details" id="trade-license-details">
+                  <h3>Trade License Details</h3>
+                  <div class="form-group">
+                    <label for="license-type">License Type</label>
+                    <select id="license-type">
+                      <option value="">Select license type</option>
+                      <option value="new">New License</option>
+                      <option value="renewal">License Renewal</option>
+                      <option value="amendment">License Amendment</option>
+                      <option value="cancellation">License Cancellation</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="business-activity">Business Activity</label>
+                    <select id="business-activity">
+                      <option value="">Select business activity</option>
+                      <option value="commercial">Commercial</option>
+                      <option value="professional">Professional</option>
+                      <option value="industrial">Industrial</option>
+                      <option value="tourism">Tourism</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-content" id="personal-tab">
+                <div class="service-options">
+                  <div class="service-option">
+                    <input type="radio" name="service-type" id="visa-services" value="visa-services">
+                    <label for="visa-services">
+                      <div class="option-content">
+                        <h3>Visa & Residence Services</h3>
+                        <p>New visa, renewal, or visa cancellation</p>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="service-option">
+                    <input type="radio" name="service-type" id="family-visa" value="family-visa">
+                    <label for="family-visa">
+                      <div class="option-content">
+                        <h3>Family Visa Services</h3>
+                        <p>Visa services for family members</p>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="service-option">
+                    <input type="radio" name="service-type" id="emirates-id" value="emirates-id">
+                    <label for="emirates-id">
+                      <div class="option-content">
+                        <h3>Emirates ID & Medical Services</h3>
+                        <p>Emirates ID application, renewal, and medical services</p>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="service-option">
+                    <input type="radio" name="service-type" id="driving-license" value="driving-license">
+                    <label for="driving-license">
+                      <div class="option-content">
+                        <h3>Driving License Services</h3>
+                        <p>New driving license application or renewal</p>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="service-details" id="visa-services-details">
+                  <h3>Visa Details</h3>
+                  <div class="form-group">
+                    <label for="visa-type">Visa Type</label>
+                    <select id="visa-type">
+                      <option value="">Select visa type</option>
+                      <option value="employment">Employment Visa</option>
+                      <option value="visit">Visit Visa</option>
+                      <option value="tourist">Tourist Visa</option>
+                      <option value="residence">Residence Visa</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="visa-duration">Visa Duration</label>
+                    <select id="visa-duration">
+                      <option value="">Select visa duration</option>
+                      <option value="30">30 Days</option>
+                      <option value="60">60 Days</option>
+                      <option value="90">90 Days</option>
+                      <option value="180">6 Months</option>
+                      <option value="365">1 Year</option>
+                      <option value="730">2 Years</option>
+                      <option value="1095">3 Years</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="button" class="btn btn-primary" id="step1-next">Continue</button>
+            </div>
+          </div>
+
+          <!-- Step 2: Personal Details -->
+          <div class="application-step-content" id="step-2" style="display: none;">
+            <h2>Personal Details</h2>
+            <p>Enter your personal or business information</p>
+
+            <form class="application-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name">First Name</label>
+                  <input type="text" id="first-name" placeholder="Enter your first name" required>
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" id="last-name" placeholder="Enter your last name" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="nationality">Nationality</label>
+                <select id="nationality" required>
+                  <option value="">Select your nationality</option>
+                  <option value="uae">United Arab Emirates</option>
+                  <option value="india">India</option>
+                  <option value="pakistan">Pakistan</option>
+                  <option value="philippines">Philippines</option>
+                  <option value="uk">United Kingdom</option>
+                  <option value="usa">United States</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+              </div>
+
+              <div id="business-fields" style="display: none;">
+                <div class="form-group">
+                  <label for="company-name">Company Name</label>
+                  <input type="text" id="company-name" placeholder="Enter company name">
+                </div>
+                <div class="form-group">
+                  <label for="company-address">Company Address</label>
+                  <textarea id="company-address" placeholder="Enter company address" rows="3"></textarea>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="additional-info">Additional Information</label>
+                <textarea id="additional-info" placeholder="Please provide any additional information relevant to your application" rows="4"></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button type="button" class="btn btn-outline" id="step2-back">Back</button>
+                <button type="button" class="btn btn-primary" id="step2-next">Continue</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Step 3: Document Upload -->
+          <div class="application-step-content" id="step-3" style="display: none;">
+            <h2>Document Upload</h2>
+            <p>Upload the required documents for your application</p>
+
+            <form class="application-form" id="document-form">
+              <div class="form-group">
+                <label for="id-proof">ID Proof (Passport/Emirates ID)</label>
+                <div class="file-upload">
+                  <p>Drag and drop your ID proof here or click to browse files</p>
+                  <input type="file" id="id-proof" class="file-input">
+                </div>
+              </div>
+
+              <div class="form-group" id="trade-license-upload" style="display: none;">
+                <label for="trade-license-doc">Existing Trade License (if applicable)</label>
+                <div class="file-upload">
+                  <p>Drag and drop your trade license here or click to browse files</p>
+                  <input type="file" id="trade-license-doc" class="file-input">
+                </div>
+              </div>
+
+              <div class="form-group" id="passport-upload" style="display: none;">
+                <label for="passport-copy">Passport Copy</label>
+                <div class="file-upload">
+                  <p>Drag and drop your passport copy here or click to browse files</p>
+                  <input type="file" id="passport-copy" class="file-input">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="additional-docs">Additional Documents (if required)</label>
+                <div class="file-upload">
+                  <p>Drag and drop any additional documents here or click to browse files</p>
+                  <input type="file" id="additional-docs" class="file-input" multiple>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="button" class="btn btn-outline" id="step3-back">Back</button>
+                <button type="button" class="btn btn-primary" id="submit-application">Submit Application</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Step 4: Success -->
+          <div class="application-step-content" id="step-4" style="display: none;">
+            <div class="success-content">
+              <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <h2>Application Submitted!</h2>
+              <p>Your application has been submitted successfully</p>
+
+              <div class="reference-number">
+                <p>Application Reference Number</p>
+                <p class="ref-number">AMB-<span id="random-ref-number">123456</span></p>
+              </div>
+
+              <p class="success-message">We have sent a confirmation email with your application details. You can check your application status anytime using your reference number.</p>
+
+              <div class="success-actions">
+                <a href="status.html" class="btn btn-outline">Check Status</a>
+                <a href="index.html" class="btn btn-primary">Return to Home</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="AL MASAA AL BAYDHA Logo">
+            <div>
+              <h3>AL MASAA AL BAYDHA</h3>
+              <p>DOCUMENTS TYPING & COPYING</p>
+            </div>
+          </div>
+          <p>Your trusted partner for all PRO services in the United Arab Emirates.</p>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="register.html">Apply Now</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="status.html">Check Status</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <address>
+            <p>Industrial Area 10, Sharjah UAE</p>
+            <p>P.O. Box 29884</p>
+            <p>Email: almasaatyping@gmail.com</p>
+            <p>Mobile: +971 55 630 5330</p>
+            <p>Tel: 06 534 1118</p>
+          </address>
+        </div>
+        <div class="footer-column">
+          <h3>Office Hours</h3>
+          <ul class="office-hours">
+            <li>
+              <span>Monday - Thursday:</span>
+              <div>
+                <div>9:30 AM - 2:00 PM</div>
+                <div>5:30 PM - 10:00 PM</div>
+              </div>
+            </li>
+            <li>
+              <span>Friday:</span>
+              <div>
+                <div>9:00 AM - 12:00 PM</div>
+                <div>5:30 PM - 10:00 PM</div>
+              </div>
+            </li>
+            <li>
+              <span>Saturday:</span>
+              <div>
+                <div>9:30 AM - 2:00 PM</div>
+                <div>5:30 PM - 10:00 PM</div>
+              </div>
+            </li>
+            <li>
+              <span>Sunday:</span>
+              <div>Closed</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> AL MASAA AL BAYDHA. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Set current year in footer
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+      
+      // Generate random reference number
+      const randomRefNumber = Math.floor(100000 + Math.random() * 900000);
+      document.getElementById('random-ref-number').textContent = randomRefNumber;
+      
+      // Tab switching
+      const tabButtons = document.querySelectorAll('.tab-button');
+      tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Remove active class from all buttons and contents
+          document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+          document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+          
+          // Add active class to clicked button and corresponding content
+          button.classList.add('active');
+          const tabId = button.getAttribute('data-tab') + '-tab';
+          document.getElementById(tabId).classList.add('active');
+        });
+      });
+      
+      // Service type selection
+      const serviceOptions = document.querySelectorAll('input[name="service-type"]');
+      serviceOptions.forEach(option => {
+        option.addEventListener('change', () => {
+          // Hide all service details
+          document.querySelectorAll('.service-details').forEach(detail => detail.style.display = 'none');
+          
+          // Show selected service details
+          const serviceType = option.value;
+          const detailsElement = document.getElementById(serviceType + '-details');
+          if (detailsElement) {
+            detailsElement.style.display = 'block';
+          }
+        });
+      });
+      
+      // Step navigation
+      const step1Next = document.getElementById('step1-next');
+      const step2Back = document.getElementById('step2-back');
+      const step2Next = document.getElementById('step2-next');
+      const step3Back = document.getElementById('step3-back');
+      const submitApplication = document.getElementById('submit-application');
+      
+      step1Next.addEventListener('click', () => {
+        document.getElementById('step-1').style.display = 'none';
+        document.getElementById('step-2').style.display = 'block';
+        updateSteps(2);
+        
+        // Show business fields if business service is selected
+        const businessService = document.querySelector('input[name="service-type"]:checked').value;
+        if (businessService === 'trade-license' || businessService === 'business-setup' || businessService === 'pro-services') {
+          document.getElementById('business-fields').style.display = 'block';
+        } else {
+          document.getElementById('business-fields').style.display = 'none';
+        }
+      });
+      
+      step2Back.addEventListener('click', () => {
+        document.getElementById('step-2').style.display = 'none';
+        document.getElementById('step-1').style.display = 'block';
+        updateSteps(1);
+      });
+      
+      step2Next.addEventListener('click', () => {
+        document.getElementById('step-2').style.display = 'none';
+        document.getElementById('step-3').style.display = 'block';
+        updateSteps(3);
+        
+        // Show relevant document upload fields based on service type
+        const serviceType = document.querySelector('input[name="service-type"]:checked').value;
+        if (serviceType === 'trade-license' || serviceType === 'business-setup') {
+          document.getElementById('trade-license-upload').style.display = 'block';
+          document.getElementById('passport-upload').style.display = 'none';
+        } else if (serviceType === 'visa-services' || serviceType === 'family-visa') {
+          document.getElementById('trade-license-upload').style.display = 'none';
+          document.getElementById('passport-upload').style.display = 'block';
+        } else {
+          document.getElementById('trade-license-upload').style.display = 'none';
+          document.getElementById('passport-upload').style.display = 'none';
+        }
+      });
+      
+      step3Back.addEventListener('click', () => {
+        document.getElementById('step-3').style.display = 'none';
+        document.getElementById('step-2').style.display = 'block';
+        updateSteps(2);
+      });
+      
+      submitApplication.addEventListener('click', () => {
+        document.getElementById('step-3').style.display = 'none';
+        document.getElementById('step-4').style.display = 'block';
+        document.getElementById('application-steps').style.display = 'none';
+      });
+      
+      // Update step indicators
+      function updateSteps(currentStep) {
+        const steps = document.querySelectorAll('.step');
+        const dividers = document.querySelectorAll('.step-divider');
+        
+        steps.forEach(step => {
+          const stepNumber = parseInt(step.getAttribute('data-step'));
+          if (stepNumber <= currentStep) {
+            step.classList.add('active');
+          } else {
+            step.classList.remove('active');
+          }
+        });
+        
+        dividers.forEach((divider, index) => {
+          if (index + 1 < currentStep) {
+            divider.classList.add('active');
+          } else {
+            divider.classList.remove('active');
+          }
+        });
+      }
+      
+      // File upload styling
+      const fileInputs = document.querySelectorAll('.file-input');
+      fileInputs.forEach(input => {
+        input.addEventListener('change', function() {
+          const fileUpload = this.parentElement;
+          if (this.files.length > 0) {
+            const fileNames = Array.from(this.files).map(file => file.name).join(', ');
+            const fileNameElement = document.createElement('p');
+            fileNameElement.classList.add('file-name');
+            fileNameElement.textContent = fileNames;
+            
+            // Remove any existing file name elements
+            const existingFileNames = fileUpload.querySelectorAll('.file-name');
+            existingFileNames.forEach(el => el.remove());
+            
+            fileUpload.appendChild(fileNameElement);
+            fileUpload.classList.add('has-files');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Reviews - AL MASAA AL BAYDHA</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="AL MASAA AL BAYDHA Logo">
+            <div class="logo-text">
+              <h1>AL MASAA AL BAYDHA</h1>
+              <p>DOCUMENTS TYPING & COPYING</p>
+            </div>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="register.html">Apply Now</a></li>
+            <li><a href="reviews.html" class="active">Reviews</a></li>
+            <li><a href="status.html">Check Status</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="login.html" class="btn btn-secondary">Login</a>
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container page-container">
+      <div class="page-header">
+        <a href="index.html" class="back-link">
+          <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+        <h1>Client Reviews</h1>
+        <p>See what our clients say about AL MASAA AL BAYDHA's services</p>
+      </div>
+
+      <div class="reviews-overview">
+        <div class="reviews-grid">
+          <div class="satisfaction-card">
+            <h2>Client Satisfaction</h2>
+            <p>Overall rating based on client feedback</p>
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="rating-number">4.7 / 5</p>
+            <p class="rating-count">Based on 128 reviews</p>
+
+            <div class="satisfaction-metrics">
+              <div class="metric">
+                <p class="metric-value">98%</p>
+                <p class="metric-label">Satisfied Clients</p>
+              </div>
+              <div class="metric">
+                <p class="metric-value">100%</p>
+                <p class="metric-label">Timely Service</p>
+              </div>
+              <div class="metric">
+                <p class="metric-value">96%</p>
+                <p class="metric-label">Would Recommend</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-form-card">
+            <h2>Share Your Experience</h2>
+            <p>We value your feedback</p>
+            
+            <div id="review-form-container">
+              <form id="review-form" class="review-form">
+                <div class="form-group">
+                  <label>Your Rating</label>
+                  <div class="rating-input">
+                    <i class="far fa-star" data-rating="1"></i>
+                    <i class="far fa-star" data-rating="2"></i>
+                    <i class="far fa-star" data-rating="3"></i>
+                    <i class="far fa-star" data-rating="4"></i>
+                    <i class="far fa-star" data-rating="5"></i>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="review-name">Your Name</label>
+                  <input type="text" id="review-name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="review-service">Service Used</label>
+                  <input type="text" id="review-service" placeholder="Which service did you use?" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="review-text">Your Review</label>
+                  <textarea id="review-text" placeholder="Share your experience with our services" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit Review</button>
+              </form>
+            </div>
+
+            <div id="review-success" class="review-success" style="display: none;">
+              <div class="success-icon">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <h3>Thank You for Your Feedback!</h3>
+              <p>Your review has been submitted successfully and will help other clients.</p>
+              <button class="btn btn-primary" id="write-another-review">Write Another Review</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials-section">
+        <div class="testimonials-header">
+          <h2>Client Testimonials</h2>
+          <div class="testimonials-tabs">
+            <button class="tab-button active" data-tab="all">All Reviews</button>
+            <button class="tab-button" data-tab="business">Business Services</button>
+            <button class="tab-button" data-tab="visa">Visa Services</button>
+          </div>
+        </div>
+
+        <div class="tab-content active" id="all-testimonials">
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-author">
+                  <div class="author-icon">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="author-info">
+                    <p class="author-name">Mohammed Al Hashimi</p>
+                    <p class="author-service">Business Setup</p>
+                  </div>
+                </div>
+                <p class="testimonial-date">March 15, 2025</p>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">AL MASAA AL BAYDHA made setting up my business in Sharjah incredibly easy. Their team handled all the paperwork and government procedures efficiently. Highly recommended!</p>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-author">
+                  <div class="author-icon">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="author-info">
+                    <p class="author-name">Sarah Johnson</p>
+                    <p class="author-service">Visa Processing</p>
+                  </div>
+                </div>
+                <p class="testimonial-date">March 10, 2025</p>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">I was impressed with how quickly they processed my family's residence visas. The team was professional and kept me updated throughout the process. Great service!</p>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-author">
+                  <div class="author-icon">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="author-info">
+                    <p class="author-name">Rajesh Patel</p>
+                    <p class="author-service">Trade License Renewal</p>
+                  </div>
+                </div>
+                <p class="testimonial-date">February 28, 2025</p>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="testimonial-text">Very efficient service for my trade license renewal. The process was smooth and they handled everything professionally. Will use their services again.</p>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-author">
+                  <div class="author-icon">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="author-info">
+                    <p class="author-name">Fatima Al Zaabi</p>
+                    <p class="author-service">Emirates ID Services</p>
+                  </div>
+                </div>
+                <p class="testimonial-date">February 20, 2025</p>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">The team at AL MASAA AL BAYDHA was extremely helpful with my Emirates ID application. They guided me through the entire process and made it stress-free.</p>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-author">
+                  <div class="author-icon">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="author-info">
+                    <p class="author-name">John Williams</p>
+                    <p class="author-service">PRO Services</p>
+                  </div>
+                </div>
+                <p class="testimonial-date">February 15, 2025</p>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="testimonial-text">Their PRO services saved me so much time dealing with government departments. Professional staff and excellent communication throughout.</p>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-author">
+                  <div class="author-icon">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="author-info">
+                    <p class="author-name">Aisha Rahman</p>
+                    <p class="author-service">Document Attestation</p>
+                  </div>
+                </div>
+                <p class="testimonial-date">February 5, 2025</p>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">I needed urgent document attestation and they delivered within the promised timeframe. Very reliable service with excellent customer support.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="business-testimonials">
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-author">
+                  <div class="author-icon">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="author-info">
+                    <p class="author-name">Mohammed Al Hashimi</p>
+                    <p class="author-service">Business Setup</p>
+                  </div>
+                </div>
+                <p class="testimonial-date">March 15, 2025</p>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">AL MASAA AL BAYDHA made setting up my business in Sharjah incredibly easy. Their team handled all the paperwork and government procedures efficiently. Highly recommended!</p>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-author">
+                  <div class="author-icon">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="author-info">
+                    <p class="author-name">Rajesh Patel</p>
+                    <p class="author-service">Trade License Renewal</p>
+                  </div>
+                </div>
+                <p class="testimonial-date">February 28, 2025</p>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="testimonial-text">Very efficient service for my trade license renewal. The process was smooth and they handled everything professionally. Will use their services again.</p>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-author">
+                  <div class="author-icon">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="author-info">
+                    <p class="author-name">John Williams</p>
+                    <p class="author-service">PRO Services</p>
+                  </div>
+                </div>
+                <p class="testimonial-date">February 15, 2025</p>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="testimonial-text">Their PRO services saved me so much time dealing with government departments. Professional staff and excellent communication throughout.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="visa-testimonials">
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-author">
+                  <div class="author-icon">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="author-info">
+                    <p class="author-name">Sarah Johnson</p>
+                    <p class="author-service">Visa Processing</p>
+                  </div>
+                </div>
+                <p class="testimonial-date">March 10, 2025</p>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">I was impressed with how quickly they processed my family's residence visas. The team was professional and kept me updated throughout the process. Great service!</p>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-author">
+                  <div class="author-icon">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="author-info">
+                    <p class="author-name">Fatima Al Zaabi</p>
+                    <p class="author-service">Emirates ID Services</p>
+                  </div>
+                </div>
+                <p class="testimonial-date">February 20, 2025</p>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">The team at AL MASAA AL BAYDHA was extremely helpful with my Emirates ID application. They guided me through the entire process and made it stress-free.</p>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-author">
+                  <div class="author-icon">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="author-info">
+                    <p class="author-name">Ahmed Khalid</p>
+                    <p class="author-service">Family Visa</p>
+                  </div>
+                </div>
+                <p class="testimonial-date">January 25, 2025</p>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">The process of getting visas for my family was made simple by AL MASAA AL BAYDHA. Their attention to detail ensured there were no delays or issues.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="partners-section">
+        <h2>Our Government Partners</h2>
+        <p>We work with all major government entities in the UAE</p>
+        <div class="partners-grid">
+          <div class="partner-logo">
+            <div class="logo-circle">
+              <img src="images/logo.png" alt="AL MASAA AL BAYDHA Logo" class="partner-icon">
+            </div>
+            <p>Sharjah Municipality</p>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-circle">
+              <img src="images/logo.png" alt="AL MASAA AL BAYDHA Logo" class="partner-icon">
+            </div>
+            <p>Tasjeel</p>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-circle">
+              <img src="images/logo.png" alt="AL MASAA AL BAYDHA Logo" class="partner-icon">
+            </div>
+            <p>Tasheel</p>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-circle">
+              <img src="images/logo.png" alt="AL MASAA AL BAYDHA Logo" class="partner-icon">
+            </div>
+            <p>Dubai Economy</p>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-circle">
+              <img src="images/logo.png" alt="AL MASAA AL BAYDHA Logo" class="partner-icon">
+            </div>
+            <p>Sharjah Government</p>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-circle">
+              <img src="images/logo.png" alt="AL MASAA AL BAYDHA Logo" class="partner-icon">
+            </div>
+            <p>EVG</p>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-circle">
+              <img src="images/logo.png" alt="AL MASAA AL BAYDHA Logo" class="partner-icon">
+            </div>
+            <p>Ministry of Health</p>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-circle">
+              <img src="images/logo.png" alt="AL MASAA AL BAYDHA Logo" class="partner-icon">
+            </div>
+            <p>MOHRE</p>
+            <p class="subtitle">Ministry of Human Resources</p>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-circle">
+              <img src="images/logo.png" alt="AL MASAA AL BAYDHA Logo" class="partner-icon">
+            </div>
+            <p>Amer</p>
+          </div>
+          <div class="partner-logo">
+            <div class="logo-circle">
+              <img src="images/logo.png" alt="AL MASAA AL BAYDHA Logo" class="partner-icon">
+            </div>
+            <p>Tadbeer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="AL MASAA AL BAYDHA Logo">
+            <div>
+              <h3>AL MASAA AL BAYDHA</h3>
+              <p>DOCUMENTS TYPING & COPYING</p>
+            </div>
+          </div>
+          <p>Your trusted partner for all PRO services in the United Arab Emirates.</p>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="register.html">Apply Now</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="status.html">Check Status</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <address>
+            <p>Industrial Area 10, Sharjah UAE</p>
+            <p>P.O. Box 29884</p>
+            <p>Email: almasaatyping@gmail.com</p>
+            <p>Mobile: +971 55 630 5330</p>
+            <p>Tel: 06 534 1118</p>
+          </address>
+        </div>
+        <div class="footer-column">
+          <h3>Office Hours</h3>
+          <ul class="office-hours">
+            <li>
+              <span>Monday - Thursday:</span>
+              <div>
+                <div>9:30 AM - 2:00 PM</div>
+                <div>5:30 PM - 10:00 PM</div>
+              </div>
+            </li>
+            <li>
+              <span>Friday:</span>
+              <div>
+                <div>9:00 AM - 12:00 PM</div>
+                <div>5:30 PM - 10:00 PM</div>
+              </div>
+            </li>
+            <li>
+              <span>Saturday:</span>
+              <div>
+                <div>9:30 AM - 2:00 PM</div>
+                <div>5:30 PM - 10:00 PM</div>
+              </div>
+            </li>
+            <li>
+              <span>Sunday:</span>
+              <div>Closed</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> AL MASAA AL BAYDHA. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Set current year in footer
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+      
+      // Tab switching for testimonials
+      const tabButtons = document.querySelectorAll('.testimonials-tabs .tab-button');
+      tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Remove active class from all buttons and contents
+          document.querySelectorAll('.testimonials-tabs .tab-button').forEach(btn => btn.classList.remove('active'));
+          document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+          
+          // Add active class to clicked button and corresponding content
+          button.classList.add('active');
+          const tabId = button.getAttribute('data-tab') + '-testimonials';
+          document.getElementById(tabId).classList.add('active');
+        });
+      });
+      
+      // Rating input functionality
+      const ratingStars = document.querySelectorAll('.rating-input i');
+      let selectedRating = 0;
+      
+      ratingStars.forEach(star => {
+        star.addEventListener('mouseover', function() {
+          const rating = parseInt(this.getAttribute('data-rating'));
+          highlightStars(rating);
+        });
+        
+        star.addEventListener('mouseout', function() {
+          highlightStars(selectedRating);
+        });
+        
+        star.addEventListener('click', function() {
+          selectedRating = parseInt(this.getAttribute('data-rating'));
+          highlightStars(selectedRating);
+        });
+      });
+      
+      function highlightStars(rating) {
+        ratingStars.forEach(star => {
+          const starRating = parseInt(star.getAttribute('data-rating'));
+          if (starRating <= rating) {
+            star.classList.remove('far');
+            star.classList.add('fas');
+          } else {
+            star.classList.remove('fas');
+            star.classList.add('far');
+          }
+        });
+      }
+      
+      // Review form submission
+      const reviewForm = document.getElementById('review-form');
+      reviewForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        if (selectedRating === 0) {
+          alert('Please select a rating');
+          return;
+        }
+        
+        document.getElementById('review-form-container').style.display = 'none';
+        document.getElementById('review-success').style.display = 'block';
+      });
+      
+      // Write another review button
+      const writeAnotherButton = document.getElementById('write-another-review');
+      writeAnotherButton.addEventListener('click', function() {
+        document.getElementById('review-success').style.display = 'none';
+        document.getElementById('review-form-container').style.display = 'block';
+        
+        // Reset form
+        reviewForm.reset();
+        selectedRating = 0;
+        highlightStars(0);
+      });
+    });
+  </script>
+</body>
+</html>
+

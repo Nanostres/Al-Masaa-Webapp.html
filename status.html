@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Status - AL MASAA AL BAYDHA</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="AL MASAA AL BAYDHA Logo">
+            <div class="logo-text">
+              <h1>AL MASAA AL BAYDHA</h1>
+              <p>DOCUMENTS TYPING & COPYING</p>
+            </div>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="register.html">Apply Now</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="status.html" class="active">Check Status</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="login.html" class="btn btn-secondary">Login</a>
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container page-container">
+      <div class="page-header">
+        <a href="index.html" class="back-link">
+          <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+        <h1>Check Application Status</h1>
+        <p>Track the status of your service application</p>
+      </div>
+
+      <div class="status-container">
+        <div class="status-card">
+          <h2>Application Status Tracker</h2>
+          <p>Enter your application reference number to check the current status</p>
+
+          <div class="status-tabs">
+            <div class="tab-buttons">
+              <button class="tab-button active" data-tab="id">By Reference Number</button>
+              <button class="tab-button" data-tab="details">By Personal Details</button>
+            </div>
+
+            <div class="tab-content active" id="id-tab">
+              <form id="reference-form" class="status-form">
+                <div class="form-group">
+                  <label for="reference-id">Reference Number</label>
+                  <div class="search-input">
+                    <input type="text" id="reference-id" placeholder="e.g. AMB-123456" required>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                  </div>
+                  <p class="input-hint">Your reference number was provided at the time of application submission</p>
+                </div>
+              </form>
+            </div>
+
+            <div class="tab-content" id="details-tab">
+              <form id="details-form" class="status-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" placeholder="Enter your first name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" placeholder="Enter your last name" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+              </form>
+            </div>
+          </div>
+
+          <div id="status-result" style="display: none;">
+            <div class="application-summary">
+              <div class="summary-header">
+                <div>
+                  <h3 id="application-type">Trade License Renewal</h3>
+                  <p>Reference Number: <span id="application-id">AMB-123456</span></p>
+                </div>
+                <div class="status-badge" id="status-badge">In Progress</div>
+              </div>
+
+              <div class="summary-details">
+                <div class="detail-item">
+                  <p class="detail-label">Submitted Date</p>
+                  <p class="detail-value" id="submitted-date">2025-03-15</p>
+                </div>
+                <div class="detail-item">
+                  <p class="detail-label">Estimated Completion</p>
+                  <p class="detail-value" id="completion-date">2025-03-29</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="application-progress">
+              <h3>Application Progress</h3>
+              <div class="progress-steps" id="progress-steps">
+                <!-- Progress steps will be inserted here by JavaScript -->
+              </div>
+            </div>
+          </div>
+
+          <div id="no-result" style="display: none;">
+            <div class="no-result-message">
+              <p>No application found with reference number: <span id="search-id"></span></p>
+              <p>Please check the reference number and try again or contact support for assistance.</p>
+            </div>
+          </div>
+
+          <div class="status-footer">
+            <p>Need help? Contact our support team at almasaatyping@gmail.com or call +971 55 630 5330.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="AL MASAA AL BAYDHA Logo">
+            <div>
+              <h3>AL MASAA AL BAYDHA</h3>
+              <p>DOCUMENTS TYPING & COPYING</p>
+            </div>
+          </div>
+          <p>Your trusted partner for all PRO services in the United Arab Emirates.</p>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="register.html">Apply Now</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="status.html">Check Status</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <address>
+            <p>Industrial Area 10, Sharjah UAE</p>
+            <p>P.O. Box 29884</p>
+            <p>Email: almasaatyping@gmail.com</p>
+            <p>Mobile: +971 55 630 5330</p>
+            <p>Tel: 06 534 1118</p>
+          </address>
+        </div>
+        <div class="footer-column">
+          <h3>Office Hours</h3>
+          <ul class="office-hours">
+            <li>
+              <span>Monday - Thursday:</span>
+              <div>
+                <div>9:30 AM - 2:00 PM</div>
+                <div>5:30 PM - 10:00 PM</div>
+              </div>
+            </li>
+            <li>
+              <span>Friday:</span>
+              <div>
+                <div>9:00 AM - 12:00 PM</div>
+                <div>5:30 PM - 10:00 PM</div>
+              </div>
+            </li>
+            <li>
+              <span>Saturday:</span>
+              <div>
+                <div>9:30 AM - 2:00 PM</div>
+                <div>5:30 PM - 10:00 PM</div>
+              </div>
+            </li>
+            <li>
+              <span>Sunday:</span>
+              <div>Closed</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> AL MASAA AL BAYDHA. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Set current year in footer
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+      
+      // Tab switching
+      const tabButtons = document.querySelectorAll('.tab-button');
+      tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Remove active class from all buttons and contents
+          document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+          document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+          
+          // Add active class to clicked button and corresponding content
+          button.classList.add('active');
+          const tabId = button.getAttribute('data-tab') + '-tab';
+          document.getElementById(tabId).classList.add('active');
+        });
+      });
+      
+      // Reference number search
+      const referenceForm = document.getElementById('reference-form');
+      referenceForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const referenceId = document.getElementById('reference-id').value.trim();
+        if (!referenceId) return;
+        
+        // Show loading state
+        const submitButton = this.querySelector('button[type="submit"]');
+        const originalButtonText = submitButton.textContent;
+        submitButton.textContent = 'Searching...';
+        submitButton.disabled = true;
+        
+        // Hide previous results
+        document.getElementById('status-result').style.display = 'none';
+        document.getElementById('no-result').style.display = 'none';
+        
+        // Simulate API call
+        setTimeout(() => {
+          submitButton.textContent = originalButtonText;
+          submitButton.disabled = false;
+          
+          if (referenceId.startsWith('AMB-')) {
+            // Show result
+            document.getElementById('application-id').textContent = referenceId;
+            document.getElementById('status-result').style.display = 'block';
+            
+            // Create progress steps
+            const progressSteps = [
+              { name: "Application Received", status: "completed", date: "March 15, 2025" },
+              { name: "Document Verification", status: "in-progress", date: "March 22, 2025" },
+              { name: "Government Submission", status: "pending", date: "" },
+              { name: "License Issuance", status: "pending", date: "" }
+            ];
+            
+            const progressStepsContainer = document.getElementById('progress-steps');
+            progressStepsContainer.innerHTML = '';
+            
+            progressSteps.forEach(step => {
+              const stepElement = document.createElement('div');
+              stepElement.className = 'progress-step';
+              
+              let iconClass = '';
+              let iconColor = '';
+              
+              if (step.status === 'completed') {
+                iconClass = 'fa-check-circle';
+                iconColor = 'text-green';
+              } else if (step.status === 'in-progress') {
+                iconClass = 'fa-clock';
+                iconColor = 'text-blue';
+              } else {
+                iconClass = 'fa-file-alt';
+                iconColor = 'text-gray';
+              }
+              
+              stepElement.innerHTML = `
+                <div class="step-icon ${iconColor}">
+                  <i class="fas ${iconClass}"></i>
+                </div>
+                <div class="step-content">
+                  <div class="step-header">
+                    <p class="step-name">${step.name}</p>
+                    ${step.date ? `<p class="step-date">${step.date}</p>` : ''}
+                  </div>
+                  ${step.status === 'in-progress' ? '<p class="step-note">Your documents are currently being verified by our team.</p>' : ''}
+                </div>
+              `;
+              
+              progressStepsContainer.appendChild(stepElement);
+            });
+          } else {
+            // Show no result message
+            document.getElementById('search-id').textContent = referenceId;
+            document.getElementById('no-result').style.display = 'block';
+          }
+        }, 1000);
+      });
+      
+      // Personal details search
+      const detailsForm = document.getElementById('details-form');
+      detailsForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Show loading state
+        const submitButton = this.querySelector('button[type="submit"]');
+        const originalButtonText = submitButton.textContent;
+        submitButton.textContent = 'Searching...';
+        submitButton.disabled = true;
+        
+        // Hide previous results
+        document.getElementById('status-result').style.display = 'none';
+        document.getElementById('no-result').style.display = 'none';
+        
+        // Simulate API call
+        setTimeout(() => {
+          submitButton.textContent = originalButtonText;
+          submitButton.disabled = false;
+          
+          // Always show a result for demo purposes
+          document.getElementById('application-id').textContent = 'AMB-654321';
+          document.getElementById('status-result').style.display = 'block';
+          
+          // Create progress steps
+          const progressSteps = [
+            { name: "Application Received", status: "completed", date: "March 10, 2025" },
+            { name: "Document Verification", status: "completed", date: "March 15, 2025" },
+            { name: "Government Submission", status: "in-progress", date: "March 22, 2025" },
+            { name: "License Issuance", status: "pending", date: "" }
+          ];
+          
+          const progressStepsContainer = document.getElementById('progress-steps');
+          progressStepsContainer.innerHTML = '';
+          
+          progressSteps.forEach(step => {
+            const stepElement = document.createElement('div');
+            stepElement.className = 'progress-step';
+            
+            let iconClass = '';
+            let iconColor = '';
+            
+            if (step.status === 'completed') {
+              iconClass = 'fa-check-circle';
+              iconColor = 'text-green';
+            } else if (step.status === 'in-progress') {
+              iconClass = 'fa-clock';
+              iconColor = 'text-blue';
+            } else {
+              iconClass = 'fa-file-alt';
+              iconColor = 'text-gray';
+            }
+            
+            stepElement.innerHTML = `
+              <div class="step-icon ${iconColor}">
+                <i class="fas ${iconClass}"></i>
+              </div>
+              <div class="step-content">
+                <div class="step-header">
+                  <p class="step-name">${step.name}</p>
+                  ${step.date ? `<p class="step-date">${step.date}</p>` : ''}
+                </div>
+                ${step.status === 'in-progress' ? '<p class="step-note">Your application is currently being processed by government authorities.</p>' : ''}
+              </div>
+            `;
+            
+            progressStepsContainer.appendChild(stepElement);
+          });
+        }, 1000);
+      });
+    });
+  </script>
+</body>
+</html>
+
